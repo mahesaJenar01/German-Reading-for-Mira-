@@ -1,0 +1,228 @@
+:root {
+  --bg-main: #FFF5F7;
+  --bg-card: #FFFFFF;
+  --text-primary: #4A4A4A;
+  --text-secondary: #7A7A7A;
+  --primary-pink: #FF8FAB;
+  --primary-pink-dark: #FB6F92;
+  --correct: #57CC99;
+  --incorrect: #FF6B6B;
+  --border-color: #FDE2E8;
+
+  --font-heading: 'Lora', serif;
+  --font-body: 'Nunito Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* --- Main App Container --- */
+.App {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -15px rgba(255, 143, 171, 0.3);
+  padding: 2.5rem 3rem;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-family: var(--font-heading);
+  color: var(--primary-pink);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* --- Reading Component Styles --- */
+.reading-container {
+  margin-bottom: 2.5rem;
+  border-left: 3px solid var(--primary-pink);
+  padding-left: 1.5rem;
+}
+
+.reading-container h2 {
+  font-family: var(--font-heading);
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.reading-container p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+}
+
+/* --- Quiz Component Styles --- */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quiz-header h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-pink);
+  margin: 0;
+}
+
+.progress-counter {
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: var(--bg-main);
+  color: var(--primary-pink);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.question p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex; /* Add this */
+  align-items: flex-start; /* Add this */
+  gap: 0.5rem; /* Add this */
+}
+
+/* ADD this new rule */
+.question-number {
+  color: var(--primary-pink);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* MODIFY this rule */
+.options label {
+  display: flex; /* Change from 'block' to 'flex' */
+  align-items: center; /* Add this */
+  gap: 0.75rem; /* Add this */
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ADD this new rule */
+.option-letter {
+  font-weight: 600;
+  color: var(--primary-pink);
+}
+
+.options label:hover {
+  border-color: var(--primary-pink);
+  background-color: var(--bg-main);
+}
+
+.options input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+/* Style the label when its radio button is checked */
+.options input[type="radio"]:checked + label {
+  border-color: var(--primary-pink);
+  background-color: var(--primary-pink);
+  color: white;
+  font-weight: 600;
+}
+
+/* --- Button Styles --- */
+.action-area {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--primary-pink-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(251, 111, 146, 0.25);
+}
+
+.btn:disabled {
+  background-color: #F8C8D5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Results Screen Styles --- */
+.results-container {
+  text-align: center;
+}
+
+.results-container h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-pink);
+  font-size: 2rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.score span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--primary-pink-dark);
+}
+
+/* Styles for showing correct/incorrect answers after submission */
+.options label.correct {
+  background-color: var(--correct);
+  border-color: var(--correct);
+  color: white;
+  font-weight: 600;
+}
+
+.options label.incorrect {
+  background-color: #FFE2E2;
+  border-color: var(--incorrect);
+  color: var(--incorrect);
+}
+
+.options label.user-incorrect {
+  background-color: var(--incorrect);
+  border-color: var(--incorrect);
+  color: white;
+  font-weight: 600;
+}
+
+/* --- Message Styles --- */
+.loading-message, .completion-message {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.completion-message h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-pink);
+  font-size: 2rem;
+}

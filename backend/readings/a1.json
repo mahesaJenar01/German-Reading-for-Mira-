@@ -1,0 +1,75 @@
+{
+  "1": {
+    "title": "Annas Morgenroutine",
+    "text": "Jeden Morgen um sieben Uhr klingelt mein Wecker. Ich bin Anna und ich bin Studentin. Ich bin oft müde, aber ich muss <b>aufstehen</b>. Ich mache das Licht an und öffne das Fenster. Die frische Luft hilft ein bisschen.\n\nDanach gehe ich ins Badezimmer. Zuerst <b>wasche</b> ich mir das Gesicht mit kaltem Wasser. Das macht mich wirklich wach! Manchmal <b>dusche</b> ich auch am Morgen. Das ist sehr erfrischend und ein guter Start in den Tag.\n\nNach dem Duschen muss ich mich schnell <b>anziehen</b>. Ich wähle meine Kleidung für die Universität aus: eine Hose und ein T-Shirt. Meine Vorlesung beginnt bald, also muss ich <b>sofort</b> gehen. Ich nehme meine Tasche und verlasse schnell das Haus.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um wie viel Uhr steht Anna auf?",
+        "options": ["Um sechs Uhr", "Um sieben Uhr", "Um acht Uhr"],
+        "answer": "Um sieben Uhr"
+      },
+      {
+        "id": 2,
+        "question": "Was macht Anna zuerst im Badezimmer?",
+        "options": ["Sie duscht", "Sie putzt die Zähne", "Sie wäscht sich das Gesicht"],
+        "answer": "Sie wäscht sich das Gesicht"
+      },
+      {
+        "id": 3,
+        "question": "Was zieht Anna für die Universität an?",
+        "options": ["Ein Kleid", "Eine Hose und ein T-Shirt", "Einen Rock"],
+        "answer": "Eine Hose und ein T-Shirt"
+      },
+      {
+        "id": 4,
+        "question": "Warum muss Anna sofort gehen?",
+        "options": ["Sie hat Hunger", "Ihre Vorlesung beginnt bald", "Sie ist müde"],
+        "answer": "Ihre Vorlesung beginnt bald"
+      },
+      {
+        "id": 5,
+        "question": "Was hilft Anna, wach zu werden?",
+        "options": ["Musik", "Kaltes Wasser", "Kaffee"],
+        "answer": "Kaltes Wasser"
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": 6,
+        "word": "aufstehen",
+        "question": "What does 'aufstehen' mean?",
+        "options": ["to go to bed", "to stand up / to get up", "to sit down"],
+        "answer": "to stand up / to get up"
+      },
+      {
+        "id": 7,
+        "word": "waschen",
+        "question": "What does 'sich waschen' mean?",
+        "options": ["to drink", "to eat", "to wash oneself"],
+        "answer": "to wash oneself"
+      },
+      {
+        "id": 8,
+        "word": "duschen",
+        "question": "What does 'duschen' mean?",
+        "options": ["to sing", "to take a shower", "to sleep"],
+        "answer": "to take a shower"
+      },
+      {
+        "id": 9,
+        "word": "anziehen",
+        "question": "What does 'sich anziehen' mean?",
+        "options": ["to get dressed", "to buy clothes", "to take off clothes"],
+        "answer": "to get dressed"
+      },
+      {
+        "id": 10,
+        "word": "sofort",
+        "question": "What does 'sofort' mean?",
+        "options": ["later", "maybe", "immediately"],
+        "answer": "immediately"
+      }
+    ]
+  }
+}
